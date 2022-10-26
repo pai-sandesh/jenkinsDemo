@@ -1,0 +1,9 @@
+# ignore .class, .settings  .project files
+
+*.class
+
+*.settings
+
+*.project
+
+
