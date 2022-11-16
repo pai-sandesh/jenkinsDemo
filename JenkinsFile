@@ -1,0 +1,22 @@
+pipeline{
+    agent any
+    stages{
+        stage("Stage 001"){
+            steps{
+                echo "hey This is my first demo of pipeline"
+            }
+        }
+        stage("This is maven stage"){
+            steps{
+                echo "Maven Build"
+            }
+        }
+        stage("Git Build"){
+            steps{
+                echo "code pulled from git"
+            
+                git branch: 'main', credentialsId: 'MyGitHub', url: 'https://github.com/pai-sandesh/myApp.git'
+            }
+        }
+    }
+}
