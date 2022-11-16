@@ -19,7 +19,7 @@ pipeline{
                 echo "code pulled from git"
             }
         }
-        stage("Maven Build"{
+        stage("Maven Build"){
         steps{
         sh "mvn clean package"
         }
