@@ -15,7 +15,7 @@ pipeline{
             steps{
                 echo "code pulled from git"
             
-                git branch: 'main', credentialsId: 'MyGitHub', url: 'https://github.com/pai-sandesh/myApp.git'
+               
             }
         }
     }
