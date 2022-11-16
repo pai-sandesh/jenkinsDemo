@@ -1,17 +1,12 @@
 pipeline{
     agent any
     environment{
-    PATH = " C:\Users\admin\Documents\apache-maven-3.6.3\bin\.."
+    PATH = "C:/Users/admin/Documents/apache-maven-3.6.3/bin/.."
     }
     stages{
         stage("Stage 001"){
             steps{
                 echo "hey This is my first demo of pipeline"
-            }
-        }
-        stage("This is maven stage"){
-            steps{
-                echo "Maven Build"
             }
         }
         stage("Git Build"){
